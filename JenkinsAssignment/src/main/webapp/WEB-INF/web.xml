@@ -1,0 +1,17 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Jenkins Assignment Web Application</display-name>
+  <servlet>
+    <servlet-name>jenkinsapp</servlet-name>
+    <servlet-class>
+      com.compugain.apps.JenkinsServlet
+    </servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jenkinsapp</servlet-name>
+    <url-pattern>/jenkinsapp</url-pattern>
+  </servlet-mapping>
+</web-app>
