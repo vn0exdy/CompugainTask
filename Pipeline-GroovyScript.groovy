@@ -1,7 +1,7 @@
 def v, a
 
 //checkout from Git repositpory
-stage 'checkout source code'
+stage 'Checkout source code'
 node{
     git url: 'https://github.com/vn0exdy/CompugainTask.git'
     v = version()
@@ -26,7 +26,7 @@ node{
 def build = 'Build '+ a+' and '+v
 stage build
 node{
-  def mvnHome = tool 'M3'
+  def mvnHome = tool 'MAVEN3'
     bat "mvn clean install"
 }
 
