@@ -3,7 +3,7 @@ def v, a
 //checkout from Git repositpory
 stage 'checkout source code'
 node{
-    git url: 'https://github.com/silpavuppalapati/JenkinsAssignment.git'
+    git url: 'https://github.com/vn0exdy/CompugainTask.git'
     v = version()
     if (v) {
         echo "Building version ${v}"
